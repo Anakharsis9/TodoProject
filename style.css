@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* #add-task {
+    display: flex;
+    
+} */
+
+h1 {
+    font-size: 30px;
+    align-self: center;
+}
+
+#input-task {
+    width: 300px;
+    border: none;
+    border-bottom: solid rgb(146, 54, 155) 2px;
+}
+
+#input-task:focus {}
+
+#add-task-button {
+    font-size: 14px;
+    width: 100px;
+    height: 28px;
+    color: white;
+    background-color: rgb(188, 84, 197);
+    border: none;
+    font-weight: 500;
+}
+
+#task-list {
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 14px;
+    padding: 4px;
+    border-radius: 100%;
+    background-color: rgb(255, 27, 38);
+}
+
+.delete-btn {
+    justify-self: flex-end;
+    cursor: pointer;
+    background-color: rgba(255, 27, 38, 0);
+    border: none;
+    vertical-align: middle;
+}
+
+.task{
+    margin-left: 10px;
+}
+
+
+
+input:checked+.task{
+    text-decoration: line-through;
+}
